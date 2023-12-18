@@ -22,7 +22,7 @@
     </header>
     <main>
         <section class="buttons">
-            <div>
+            <div id="bFilter">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M23 0L14 14.146V21.876L10.004 24V14.147L1 0H23ZM2.751 1L11.004 13.853V22.344L13 21.273V13.854L21.229 1H2.751Z" fill="black"/>
                 </svg>    
@@ -50,8 +50,24 @@
                       </clipPath>
                     </defs>
                 </svg>
-            </div>           
+            </div>         
         </section>
+        <div id="filterOptions">
+            <div>
+                <button>fulltime</button>
+                <button>part time</button>
+                <button>contract</button>
+            </div>
+            <div>
+                <button>remote</button>
+                <button>hybrid</button>
+                <button>office</button>
+            </div>
+            <div>
+                <button>under 60k</button>
+                <button>over 60k</button>                
+            </div>
+        </div>          
         <section class="cards">          
             <div class="title">
                 <h1>47 results for software engineer</h1>
@@ -133,4 +149,15 @@
         <div>Fuchsjobs</div>
     </footer>      
 </body>
+<script>
+    const filterButton = document.querySelector('#bFilter');
+
+    filterButton.addEventListener('click', function() {
+      document.getElementById("filterOptions").style.display = "flex";
+    });
+    
+    function w3_close() {
+      document.getElementById("filterOptions").style.display = "none";
+    }
+</script>
 </html>

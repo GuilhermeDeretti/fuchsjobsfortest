@@ -72,3 +72,10 @@ footer{
     color: white;
     background-color: black;
 }
+#filterOptions{
+    padding: 1rem;
+    display: none;
+    padding: 0.7rem 0.5rem 0rem 0rem;
+    align-items: baseline;
+    justify-content: space-between;  
+}
